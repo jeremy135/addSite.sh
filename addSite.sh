@@ -21,11 +21,11 @@ echo "Added Alias 127.0.0.1 $1 into /etc/hosts"
 
 mkdir /srv/www/htdocs/$1
 
+echo "Created directory /srv/www/htdocs/$1"
+
 chmod 777 /srv/www/htdocs/$1
 
 echo "Warning! Chmod 777! For site dir."
-
-echo "Created directory /srv/www/htdocs/$1"
 
 echo "<h1>$1</h1>" > /srv/www/htdocs/$1/index.html
 
